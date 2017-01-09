@@ -4,8 +4,8 @@
 public class Die {
     int numberOfSides;
 
-    public  int roll(int max) {
-        return  1 + (int) (Math.random() * (max - 1));
+    public  int roll() {
+        return  1 + (int) (Math.random() * (numberOfSides - 1));
     }
 
     public Die (int numberOfSides) {
