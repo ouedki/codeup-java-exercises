@@ -33,7 +33,7 @@ public class Validator {
 
         try {
             numberRange = Integer.parseInt(sc.nextLine());
-            if (numberRange<=min || numberRange>=max) {
+            if (numberRange<min || numberRange>max) {
                 throw new IllegalArgumentException("WARNING - Number must be Between 0 and 100.");
             }
         } catch (IllegalArgumentException e) {
